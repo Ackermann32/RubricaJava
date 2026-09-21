@@ -21,5 +21,8 @@ CREATE TABLE Utente (
 
 INSERT INTO Persona (id, nome, cognome, telefono, indirizzo, eta) VALUES
 (1, 'Steve','Jobs','via Cupertino 13','0612344',56),
-(2, 'Luigi', 'Verdi', '0987654321', 'Via Milano 2',23),
-(3, 'Giulia', 'Bianchi', '5555555555', 'Via Napoli 3',12);
+(2, 'Bill', 'Gates', 'via Redmond 10', '06688989',60),
+(3, 'Babbo', 'Natale', ';via del Polo Nord', '00000111',99);
+
+INSERT INTO Utente (username, password) VALUES 
+('alfonso','abcd');
