@@ -73,12 +73,13 @@ public class RubricaJFrame extends JFrame {
 			finestra.setVisible(true);
             PersonaDAO dao = new PersonaDAO();
 			
+            if (!persona.getNome().equals("") && !persona.getCognome().equals("") && !persona.getIndirizzo().equals("") && !persona.getTelefono().equals("") && persona.getEta() != 0) {
 			dao.inserimento(persona);
 	
 			p.add(persona);
 			Object[] row = {persona.getNome(), persona.getCognome(), persona.getTelefono()};
 			modello.addRow(row);
-			
+            }
 			
 		});
 		
